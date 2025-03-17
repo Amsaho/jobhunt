@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://jobportal-test.onrender.com/',
+    origin:'https://jobhunt-q2fg.onrender.comre',
     credentials:true
 }
 
