@@ -24,7 +24,7 @@ const transporter = nodemailer.createTransport({
 
 // Function to send confirmation email
 const sendRegistration = async (userEmail,username) => {
-    const subject = 'Job Application Confirmation';
+    const subject = 'Account Creation Successfull';
 
     // HTML email body with company logo and name
     const htmlBody = `
@@ -104,6 +104,7 @@ export const register = async (req, res) => {
             }
         });
         try {
+         
             await sendRegistration(
                 email, 
                 fullname)
